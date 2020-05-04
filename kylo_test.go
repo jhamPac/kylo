@@ -17,7 +17,7 @@ func TestContextAwareReader(t *testing.T) {
 
 		assertBufferHas(t, got, "abc")
 
-		_, err := rdr.Read(got)
+		_, err = rdr.Read(got)
 
 		if err != nil {
 			t.Fatal(err)
